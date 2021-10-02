@@ -144,6 +144,10 @@ const Skills = () => {
                   </tr>
 
                   <tr>
+                    <td>graphQL</td>
+                  </tr>
+
+                  <tr>
                     <td>Laravel</td>
                   </tr>
                   <tr>

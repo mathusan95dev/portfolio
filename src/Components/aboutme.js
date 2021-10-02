@@ -45,8 +45,8 @@ const AboutMe = () => {
           </div>
           <div style={{ marginTop: "40px" }}>
             <span className="intro" style={{ color: "#c5c6c7" }}>
-              I'm a React and Node.js Developer with 2 Years Experience in
-              Software Field
+              I'm a Full stack Developer (React + Node.js) with 2+ Years Experience in
+              Software Engineering Field
             </span>
           </div>
           <div
