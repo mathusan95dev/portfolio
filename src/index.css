@@ -101,6 +101,11 @@ font-weight: 500;
   .intro{
     font-size: 30px;
   }
+
+  .icon-scroll{
+    top:50%
+  }
+
   
 }
 

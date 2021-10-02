@@ -38,8 +38,6 @@ const NavBar = () => {
       style={{
         height: "auto",
         background: "#1f2833",
-        position: "sticky",
-        top: "0",
       }}
     >
       <Row>
@@ -65,7 +63,7 @@ const NavBar = () => {
         <Fade>
           <Row>
             <h4 style={{ color: "#ffff" }}>Spices Expert</h4>
-            <a target="_blank" href="http://www.spicesexpert.com/">visit</a>
+            <a target="_blank" href="http://www.spicesexpert.com/" style={{color:"#ffff"}}>visit</a>
             <Carousel>
               <div>
                 <img src={spice1} />
@@ -99,7 +97,7 @@ const NavBar = () => {
       {projectCount == 2 && (
         <Fade>
           <Row>
-            <h4 style={{ color: "#ffff" }}>Find Your Vaccination Centres</h4><a target="_blank" href="https://vaxlk.com/">visit</a>
+            <h4 style={{ color: "#ffff" }}>Find Your Vaccination Centres</h4><a target="_blank" style={{color:"#ffff"}} href="https://vaxlk.com/">visit</a>
             <Carousel>
               <div>
                 <img src={vaccine1} />

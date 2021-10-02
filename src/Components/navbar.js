@@ -26,6 +26,7 @@ const NavBar = () => {
         background: "#1f2833",
         position: "sticky",
         top: "0",
+        zIndex:"1000"
       }}
     >
       <Row>
