@@ -11,3 +11,130 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headerMenu:hover ~ .menuhighlight{
+
+ background:#66FCF1;
+ 
+
+}
+
+.cursor{
+  background-color:#66FCF1;
+}
+
+.headerMenu{
+  color: #66FCF1;
+cursor: pointer;
+font-weight: 500;
+}
+
+
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  
+}
+ 
+
+.icon-scroll{
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+
+.icon-scroll:before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+
+}
+
+
+@keyframes scroll {
+  0%{
+    opacity: 1
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(46px);
+  }
+
+}
+
+/* tablets */
+@media only screen and (max-width: 768px){
+  .intro{
+    font-size: 21px;
+  }
+  .aboutmeTop{
+    margin-top: 50px;
+  }
+
+  .setHeight{
+    height: 230px;
+  }
+
+  .icon-scroll{
+    top:50%
+  }
+
+
+}
+
+@media only screen and (min-width: 992px) {
+  .aboutmeTop{
+    margin-top: 100px;
+  }
+
+  .intro{
+    font-size: 30px;
+  }
+  
+}
+
+
+
+/* mobile */
+
+@media only screen and (max-width: 600px) {
+
+  .intro{
+    font-size: 21px;
+  }
+  .aboutmeTop{
+    margin-top: 70px;
+  }
+
+  .icon-scroll{
+    top:550px
+  }
+
+  .setHeight{
+    height: 140px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .setHeight{
+    height: 220px;
+  }
+  .icon-scroll{
+    top: 60%;
+  }
+
+}
+
+
