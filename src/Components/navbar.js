@@ -6,6 +6,7 @@ import Image from "react-bootstrap/Image";
 import hamburger from "../assets/images/humburger.png";
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
+import ScrollTo from "react-scroll-into-view";
 
 const NavBar = () => {
   const [state, setState] = useState({
@@ -26,7 +27,7 @@ const NavBar = () => {
         background: "#1f2833",
         position: "sticky",
         top: "0",
-        zIndex:"1000"
+        zIndex: "1000",
       }}
     >
       <Row>
@@ -43,25 +44,34 @@ const NavBar = () => {
             <div style={{ marginTop: "30px" }}>
               <Row xs="auto">
                 <Col>
-                  <div className="headerMenu">About Me</div>
-                  <div
+                  <ScrollTo selector={`#Aboutme`}>
+                    <div className="headerMenu">About Me</div>
+                    <div
                     className="menuhighlight"
                     style={{ height: "4px", width: "100%" }}
                   ></div>
+                  </ScrollTo>
+                 
                 </Col>
                 <Col>
-                  <div className="headerMenu">Projects</div>
-                  <div
+                  <ScrollTo selector={`#Projects`}>
+                    <div className="headerMenu">Projects</div>
+                    <div
                     className="menuhighlight"
                     style={{ height: "4px", width: "100%" }}
                   ></div>
+                  </ScrollTo>
+                  
                 </Col>
                 <Col>
-                  <div className="headerMenu">Skills</div>
-                  <div
+                  <ScrollTo selector={`#Skills`}>
+                    <div className="headerMenu">Skills</div>
+                    <div
                     className="menuhighlight"
                     style={{ height: "4px", width: "100%" }}
                   ></div>
+                  </ScrollTo>
+                  
                 </Col>
               </Row>
             </div>
@@ -80,17 +90,22 @@ const NavBar = () => {
           setState({ isPaneOpen: false });
         }}
       >
-        
         <table classname="table table-borderless">
           <tbody>
-            <tr style={{height:"60px"}}>
-              <td>About me</td>
+            <tr style={{ height: "60px" }}>
+              <ScrollTo selector={`#Aboutme`}>
+                <td>About me</td>
+              </ScrollTo>
             </tr>
-            <tr style={{height:"60px"}}>
-              <td>Projects</td>
+            <tr style={{ height: "60px" }}>
+              <ScrollTo selector={`#Projects`}>
+                <td>Projects</td>
+              </ScrollTo>
             </tr>
-            <tr style={{height:"60px"}}>
-              <td>Skills</td>
+            <tr style={{ height: "60px" }}>
+              <ScrollTo selector={`#Skills`}>
+                <td>Skills</td>
+              </ScrollTo>
             </tr>
           </tbody>
         </table>

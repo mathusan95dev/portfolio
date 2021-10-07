@@ -14,7 +14,7 @@ import Typing from "react-typing-animation";
 
 const AboutMe = () => {
   return (
-    <Container fluid style={{ height: "600px", background: "#0b0c10" }}>
+    <Container fluid style={{ height: "600px", background: "#0b0c10" }} id="Aboutme">
       <Row>
         <Col sm={6}>
           <div className="d-none d-sm-block">
@@ -45,8 +45,8 @@ const AboutMe = () => {
           </div>
           <div style={{ marginTop: "40px" }}>
             <span className="intro" style={{ color: "#c5c6c7" }}>
-              I'm a Full stack Developer (React + Node.js) with 2+ Years Experience in
-              Software Engineering Field
+              I'm a Full stack Developer (React + Node.js) with 2+ Years
+              Experience in Software Engineering Field
             </span>
           </div>
           <div
@@ -54,13 +54,14 @@ const AboutMe = () => {
           >
             <Row xs="auto">
               <Col>
-                <Image src={github} />
+                <Image src={github} style={{cursor:"pointer"}} onClick={()=>window.location.href="https://github.com/mathusan95dev"} target="_blank"/>
+              </Col>
+
+              <Col>
+                <Image src={linkedin} onClick={()=>window.location.href="https://www.linkedin.com/in/seralagan-mathusan-75a437158/"} target="_blank" />
               </Col>
               <Col>
-                <Image src={facebook} />
-              </Col>
-              <Col>
-                <Image src={linkedin} />
+                <Image src={facebook} onClick={()=>window.location.href="https://www.facebook.com/seralagan.mathusan/"} target="_blank"/>
               </Col>
             </Row>
           </div>

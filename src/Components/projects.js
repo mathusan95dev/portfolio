@@ -38,7 +38,9 @@ const NavBar = () => {
       style={{
         height: "auto",
         background: "#1f2833",
+        
       }}
+      id="Projects"
     >
       <Row>
         <h3 style={{ color: "#ffff", marginTop: "10px" }}>Projects</h3>
